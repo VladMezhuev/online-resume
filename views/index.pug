@@ -1,0 +1,30 @@
+doctype html
+
+html
+  head
+    meta(charset='utf-8')
+    title Resume
+    link(href='css/style.css', rel='stylesheet')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+  body
+    #main
+      #header.center-content.clear-fix
+        ul#topContacts.flex-box
+      div(style='clear: both;')
+      #workExperience.gray
+        h2 Work Experience
+      #projects
+        h2 Projects
+      #education.gray
+        h2 Education
+      #mapDiv
+        h2 Where I've Lived and Worked
+      #lets-connect.dark-gray
+
+        h2.orange.center-text Let's Connect
+        ul#footerContacts.flex-box
+
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAq4JCX3T23IUj32KRtJsrC5xzN0YDy7zM&callback=initMap')
+    script(src='js/jQuery.js')
+    script(src='js/helper.js')
+    script(src='js/resumeBuilder.js')
